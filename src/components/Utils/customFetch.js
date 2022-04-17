@@ -1,6 +1,7 @@
+
 let condition = true
 
-const customFetch = (time, task) => {
+export function customFetch (time, task) {
     return new Promise ((resolve, reject) => {
 
         setTimeout(() => {
@@ -14,4 +15,10 @@ const customFetch = (time, task) => {
     })
 }
 
-export default customFetch;
+export function traerProducto (time, task)  {
+    return new Promise ((resolve, reject) => {
+        setTimeout(() => {
+            resolve(task);
+        }, time);
+    });
+}

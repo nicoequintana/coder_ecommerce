@@ -1,4 +1,4 @@
-const products = [
+export const products = [
     {
         id: 1,
         nombre: 'Producto 1',
@@ -31,4 +31,11 @@ const products = [
     },
 ]
 
-export default products;
+export const product = {
+    id: 6,
+    nombre: 'Producto 6',
+    precio: '$ 6,000',
+    imagen: 'https://picsum.photos/200/300/?random'
+}
+
+

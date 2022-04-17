@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import s from '../item/Item.module.css'
-import customFetch from '../Utils/customFetch'
-import products from '../Utils/products'
+import {customFetch} from '../Utils/customFetch'
+import {products} from '../Utils/products'
 import ItemList from './ItemList'
 
 

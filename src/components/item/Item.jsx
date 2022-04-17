@@ -9,7 +9,8 @@ export default function Item( { id, nombre, precio, imagen } ) {
 
 
   return (
-    <>
+    <>  
+    
         <div key={id} className={s.cardProduct}>
             <div className={s.cardImgContainer}>
                 <img className={s.cardImg} src={imagen} />
@@ -20,6 +21,7 @@ export default function Item( { id, nombre, precio, imagen } ) {
             </div>
             <ItemCountContainer />
         </div>
+          
     </>
   )
 }
