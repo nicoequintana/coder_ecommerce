@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ItemDetail from './ItemDetail';
-import {product} from '../Utils/products'
+import {products} from '../Utils/products'
 import {traerProducto} from '../Utils/customFetch'
 
 export default function ItemDetailContainer() {
@@ -8,9 +8,9 @@ export default function ItemDetailContainer() {
     const [producto, setProducto] = useState({})
     
     useEffect(()=>{
-        traerProducto(2000, product)
+        traerProducto(2000, products)
         .then((res) => {
-            setProducto(res)
+            setProducto(res.find(p => p.id===5))
         })
     }, [])
 

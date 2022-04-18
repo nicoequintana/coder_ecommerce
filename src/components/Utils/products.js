@@ -38,4 +38,4 @@ export const product = {
     imagen: 'https://picsum.photos/200/300/?random'
 }
 
-
+console.log(products.find(p => p.id===3))
