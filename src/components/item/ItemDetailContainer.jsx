@@ -8,7 +8,7 @@ export default function ItemDetailContainer() {
     const [producto, setProducto] = useState({})
     
     useEffect(()=>{
-        traerProducto(6000, product)
+        traerProducto(2000, product)
         .then((res) => {
             setProducto(res)
         })
@@ -17,7 +17,7 @@ export default function ItemDetailContainer() {
     return(
 
         <>
-            <ItemDetail {...producto} />
+            <ItemDetail producto={producto} />
         </>
 
     )
