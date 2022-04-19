@@ -14,6 +14,7 @@ export default function ItemDetail({producto}) {
             <div className={s.textDetail}>
                 <h2>{producto.nombre}</h2>
                 <h3>{producto.precio}</h3> 
+                <h3>{producto.categoria}</h3> 
             </div>
         </div>
     )

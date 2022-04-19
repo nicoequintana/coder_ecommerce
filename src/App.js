@@ -12,7 +12,8 @@ export default function App() {
 
         <Routes>
           <Route exact path="/" element={<ItemListContainer />} />
-          <Route exact path="/test" element={<ItemDetailContainer />} />
+          <Route exact path="/category" element={<ItemDetailContainer />} />
+          <Route exact path="/category/:id" element={<ItemDetailContainer />} />
 
 
         </Routes>

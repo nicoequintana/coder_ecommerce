@@ -12,6 +12,7 @@ export default function ItemList( { items } ) {
             nombre={p.nombre}
             precio={p.precio}
             imagen={p.imagen}
+            categoria={p.categoria}
         />
     ))
         

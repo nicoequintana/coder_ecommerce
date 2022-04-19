@@ -5,7 +5,7 @@ import ItemCountContainer from './counter/ItemCountContainer'
 
 
 
-export default function Item( { id, nombre, precio, imagen } ) {
+export default function Item( { id, nombre, precio, imagen, categoria } ) {
 
 
   return (
@@ -18,6 +18,7 @@ export default function Item( { id, nombre, precio, imagen } ) {
             <div className={s.cardInfo}>
                 <p className={s.cardName}>{nombre}</p>
                 <p className={s.cardPrice}>{precio}</p>
+                <p className={s.cardPrice}>{categoria}</p>
             </div>
             <ItemCountContainer />
         </div>
